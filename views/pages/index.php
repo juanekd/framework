@@ -1,0 +1,1 @@
+<h1>hola desde la vista indes de pages<h1>
