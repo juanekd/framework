@@ -5,7 +5,7 @@
 	<title>Framework Básico</title>
 	<style>
 		ul{
-			padding: 0;
+			padding: 2;
 		}
 		ul li{
 			display: inline;
@@ -18,10 +18,10 @@
 <body>
  <nav>
  	<ul>
- 		<li><a href="/">inicio</a></li>
- 		<li><a href="#">servicio</a></li>
+ 		<li><a href="/">Inicio</a></li>
+ 		<li><a href="#">Servicio</a></li>
  		<li><a href="#">Productos</a></li>
- 		<li><a href="#">notificaciones</a></li>
+ 		<li><a href="#">Notificaciones</a></li>
  		<li><a href="#">Contactanos</a></li>
  	</ul>
  </nav>

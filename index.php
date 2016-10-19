@@ -18,6 +18,16 @@ require_once(APP_PATH."view.php");
 //echo "<pre>";
 //print_r(get_required_files());
 
+try {
+	bootstrap::run(new Request);
+    } catch (Exception $e){
+    	echo $e->getMessage();
+    }
+
+
+
+
+/*corter y pegar en boostrap
 if (isset($_GET['url'])){
 	$url = filter_input(INPUT_GET, 'url', FILTER_SANITIZE_URL);
 	$url = explode("/", $url);
@@ -37,24 +47,4 @@ if (!isset($action)) {
 if (empty($args)) {
 	$args = array(0=>NULL);
 }
-
-$path = ROOT."controllers".DS.$controller."Controller.php";
-$view =ROOT."views".DS.$controller.DS.$action.".php";
-$header = ROOT."views".DS."layouts".DS."default".DS."header.php";
-$footer = ROOT."views".DS."layouts".DS."default".DS."footer.php";
-
-if (file_exists($path)){
-	include_once($path);
-	$ob = new $controller();
-	$ob->$action($args);
-
-	if (file_exists($view)) {
-		include_once($header);
-		include_once($view);
-		include_once($footer);
-	}else{
-		echo "la vista para la accion $accion no existe";
-	}
-}else{
-	echo "El controlador $controller no existe"; 
-}
+*/
