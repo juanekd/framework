@@ -3,25 +3,17 @@
 <head>
 <meta charset="UTF-8">
 	<title>Framework Básico</title>
-	<style>
-		ul{
-			padding: 2;
-		}
-		ul li{
-			display: inline;
-		}
-		nav a{
-			text-decoration: none;
-		}
-	</style>
+	<link rel="stylesheet" href="<?php echo $layoutParams["route_css"]; ?>/style.css">
 </head>
 <body>
- <nav>
- 	<ul>
- 		<li><a href="/">Inicio</a></li>
- 		<li><a href="#">Servicio</a></li>
- 		<li><a href="#">Productos</a></li>
- 		<li><a href="#">Notificaciones</a></li>
- 		<li><a href="#">Contactanos</a></li>
- 	</ul>
- </nav>
+<div class="container">
+     <nav>
+     	<ul>
+     		<li><a href="<?php echo APP_URL; ?>">Inicio</a></li>
+     		<li><a href="<?php echo APP_URL; ?>/users">Usuarios</a></li>
+     		<li><a href="#">Productos</a></li>
+     		<li><a href="#">Notostros</a></li>
+     		<li><a href="#">Contactanos</a></li>
+     	</ul>
+     </nav>
+

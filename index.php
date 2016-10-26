@@ -24,27 +24,3 @@ try {
     	echo $e->getMessage();
     }
 
-
-
-
-/*corter y pegar en boostrap
-if (isset($_GET['url'])){
-	$url = filter_input(INPUT_GET, 'url', FILTER_SANITIZE_URL);
-	$url = explode("/", $url);
-	$url = array_filter($url);
-
-	$controller = array_shift($url);
-	$action = array_shift($url);
-	$args = $url;
-}
-
-if (!isset($controller)) {
-	$controller = "pages";
-}
-if (!isset($action)) {
-	$action = "index";
-}
-if (empty($args)) {
-	$args = array(0=>NULL);
-}
-*/

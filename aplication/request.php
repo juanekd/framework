@@ -19,9 +19,9 @@ class Request
         }
 
         if (!isset($this->_controller)) {
-	        $this->_controller = "pages";
+	        $this->_controller = DEFAULT_CONTROLLER;
         }
-        if (!isset($_method)) {
+        if (!isset($this->_method)) {
 	        $this->_method = "index";
         }
         if (empty($this->_args)) {
